@@ -1,0 +1,19 @@
+{
+  "name": "wfd-child",
+  "version": "1.0.0",
+  "description": "WebFoundations child theme starter for Astra Theme based website projects.",
+  "main": "/src/js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d8m18n/wfd_astra_child_theme.git"
+  },
+  "author": "Damian Saunders",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/d8m18n/wfd_astra_child_theme/issues"
+  },
+  "homepage": "https://github.com/d8m18n/wfd_astra_child_theme#readme"
+}
