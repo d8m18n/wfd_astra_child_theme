@@ -6,7 +6,8 @@ module.exports = {
 	'env': {
 		'browser': true,
 		'jquery': true,
-		'es6': true
+		'es6': true,
+		'node': true
 	},
 
 	/**
@@ -34,6 +35,10 @@ module.exports = {
 	 * @@since 1.1
 	 */
 	'extends': 'wordpress',
+	'parser': 'babel-eslint',
+	'parserOptions': {
+		'sourceType': "module"
+	},
 
 	/**
 	 * WDS & WordPress Coding Standards for JavaScript.
@@ -58,7 +63,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'array-bracket-spacing': [ 'error', 'always' ],
+		'array-bracket-spacing': ['error', 'always'],
 
 		/**
 		 * Enforce one true brace style.
@@ -80,9 +85,9 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'camelcase': [ 'error', {
+		'camelcase': ['error', {
 			properties: 'always'
-		} ],
+		}],
 
 		/**
 		 * Disallow or enforce trailing commas.
@@ -93,7 +98,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'comma-dangle': [ 'error', 'never' ],
+		'comma-dangle': ['error', 'never'],
 
 		/**
 		 * Enforce spacing before and after comma.
@@ -114,7 +119,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'comma-style': [ 'error', 'last' ],
+		'comma-style': ['error', 'last'],
 
 		/**
 		 * Encourages use of dot notation whenever possible.
@@ -125,10 +130,10 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'dot-notation': [ 'error', {
+		'dot-notation': ['error', {
 			allowKeywords: true,
 			allowPattern: '^[a-z]+(_[a-z]+)+$'
-		} ],
+		}],
 
 		/**
 		 * Enforce newline at the end of file, with no multiple empty lines.
@@ -160,10 +165,10 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'key-spacing': [ 'error', {
+		'key-spacing': ['error', {
 			beforeColon: false,
 			afterColon: true
-		} ],
+		}],
 
 		/**
 		 * Enforce spacing before and after keywords.
@@ -184,7 +189,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'linebreak-style': [ 'error', 'unix' ],
+		'linebreak-style': ['error', 'unix'],
 
 		/**
 		 * Enforces empty lines around comments.
@@ -194,9 +199,9 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'lines-around-comment': [ 'error', {
+		'lines-around-comment': ['error', {
 			beforeLineComment: true
-		} ],
+		}],
 
 		/**
 		 * Disallow mixed spaces and tabs for indentation.
@@ -247,7 +252,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'one-var-declaration-per-line': [ 'error', 'initializations' ],
+		'one-var-declaration-per-line': ['error', 'initializations'],
 
 		/**
 		 * Enforce operators to be placed before or after line breaks.
@@ -257,7 +262,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'operator-linebreak': [ 'error', 'after' ],
+		'operator-linebreak': ['error', 'after'],
 
 		/**
 		 * Require or disallow use of semicolons instead of ASI.
@@ -268,7 +273,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'semi': [ 'error', 'always' ],
+		'semi': ['error', 'always'],
 
 		/**
 		 * Require or disallow space before blocks.
@@ -279,7 +284,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'space-before-blocks': [ 'error', 'always' ],
+		'space-before-blocks': ['error', 'always'],
 
 		/**
 		 * Require or disallow space before function opening parenthesis.
@@ -290,7 +295,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since 1.0
 		 */
-		'space-before-function-paren': [ 'error', 'never' ],
+		'space-before-function-paren': ['error', 'never'],
 
 		/**
 		 * Require or disallow space before blocks.
@@ -301,7 +306,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since  1.1
 		 */
-		'space-in-parens': [ 'error', 'always' ],
+		'space-in-parens': ['error', 'always'],
 
 		/**
 		 * Require spaces around operators.
@@ -322,9 +327,9 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since  1.1
 		 */
-		'space-unary-ops': [ 'error', {
+		'space-unary-ops': ['error', {
 			overrides: { '!': true }
-		} ],
+		}],
 
 		/**
 		 * Don't force vars to be on top.
@@ -349,7 +354,7 @@ module.exports = {
 		 * @since  1.0
 		 * @author Aubrey Portwood
 		 */
-		'yoda': [ 'error', 'always' ],
+		'yoda': ['error', 'always'],
 
 		/**
 		 * Always show an error when a variable is created that is never used.
@@ -372,7 +377,7 @@ module.exports = {
 		 * @author Aubrey Portwood
 		 * @since  1.1
 		 */
-		'no-console': 'error',
+		'no-console': 0,
 
 		/**
 		 * No use of debugger.
@@ -395,11 +400,11 @@ module.exports = {
 		 * @since  1.1
 		 * @author Aubrey Portwood
 		 */
-		'valid-jsdoc': [ 'error', {
+		'valid-jsdoc': ['error', {
 
 			// If and only if the function or method has a return statement (this option value does apply to constructors)
 			'requireReturn': false
-		} ],
+		}],
 
 		/**
 		 * Require docblocks.
@@ -432,7 +437,7 @@ module.exports = {
 		 * @since  1.1
 		 * @author Aubrey Portwood
 		 */
-		'func-style': [ 'error', 'declaration' ],
+		'func-style': ['error', 'declaration'],
 
 		/**
 		 * Require == and !== where necessary.
