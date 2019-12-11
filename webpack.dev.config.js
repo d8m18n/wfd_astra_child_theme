@@ -1,5 +1,6 @@
 const path = require( 'path' );
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
+const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 
 module.exports = {
     entry: './src/js/app.js',
@@ -24,10 +25,21 @@ module.exports = {
                         plugins: [ 'transform-class-properties' ]
                     }
                 }
+            },
+            {
+                test: /\.css/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader'
+                ]
+
             }
         ]
     },
     plugins: [
+        new MiniCssExtractPlugin( {
+            filename: 'css/style.css'
+        } ),
         new CleanWebpackPlugin()
     ]
 };
