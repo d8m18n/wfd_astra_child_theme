@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 
 module.exports = {
+    context: __dirname,
     entry: './src/js/app.js',
     output: {
         filename: 'js/app.js',
@@ -10,6 +11,7 @@ module.exports = {
         publicPath: ''
     },
     mode: 'development',
+    devtool: 'source-map',
     optimization: {
         minimize: false
     },
