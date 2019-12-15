@@ -1,9 +1,11 @@
 const path = require( 'path' );
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
+const BrowserSyncPlugin = require( 'browser-sync-webpack-plugin' );
 
 module.exports = {
     context: __dirname,
+
     entry: './src/js/app.js',
     output: {
         filename: 'js/app.js',
@@ -13,7 +15,7 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     optimization: {
-        minimize: false
+        minimize: true
     },
     module: {
         rules: [
@@ -42,6 +44,10 @@ module.exports = {
         new MiniCssExtractPlugin( {
             filename: 'css/style.css'
         } ),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new BrowserSyncPlugin( {
+            files: '**/*.php',
+            proxy: 'https://webfoundations.local/'
+        } )
     ]
 };
