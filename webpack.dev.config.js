@@ -2,6 +2,8 @@ const path = require( 'path' );
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 const BrowserSyncPlugin = require( 'browser-sync-webpack-plugin' );
+const TerserJSPlugin = require( 'terser-webpack-plugin' );
+const OptimizeCSSAssetsPlugin = require( 'optimize-css-assets-webpack-plugin' );
 
 module.exports = {
     context: __dirname,
@@ -15,7 +17,7 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     optimization: {
-        minimize: true
+        minimizer: [ new TerserJSPlugin( {} ), new OptimizeCSSAssetsPlugin( {} ) ]
     },
     module: {
         rules: [

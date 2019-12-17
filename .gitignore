@@ -10,3 +10,6 @@ Thumbs.db
 # Ignore lock files
 composer.lock
 package-lock.json
+
+# Ignore the dist folder
+/dist
