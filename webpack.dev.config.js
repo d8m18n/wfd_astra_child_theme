@@ -8,7 +8,6 @@ const StyleLintPlugin = require( 'stylelint-webpack-plugin' );
 
 module.exports = {
     context: __dirname,
-
     entry: './src/js/app.js',
     output: {
         filename: 'js/app.js',
@@ -44,7 +43,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new StyleLintPlugin(),
+
+        new StyleLintPlugin( {
+            files: '/src/**/*.css',
+            fix: true
+        } ),
         new MiniCssExtractPlugin( {
             filename: 'css/style.css'
         } ),
