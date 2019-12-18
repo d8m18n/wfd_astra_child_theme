@@ -7,8 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.production.config.js",
     "dev": "webpack --watch --config webpack.dev.config.js",
-    "lint-js": "eslint .",
-    "lint-css": "stylelint src/css"
+    "eslint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
+    "stylelint": "stylelint \"src/css/*.css\" --fix",
+    "stylelint:fix": "stylelint \"src/css/*.css\" --fix"
   },
   "repository": {
     "type": "git",
