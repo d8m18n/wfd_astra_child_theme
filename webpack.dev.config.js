@@ -21,14 +21,14 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			// {
-			// 	test: /\.$js/,
-			// 	enforce: 'pre',
-			// 	loader: 'eslint-loader',
-			// 	options: {
-			// 		fix: true,
-			// 	},
-			// },
+			{
+				test: /\.$js/,
+				enforce: 'pre',
+				loader: 'eslint-loader',
+				options: {
+					fix: true,
+				},
+			},
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
@@ -62,6 +62,7 @@ module.exports = {
 		new CleanWebpackPlugin(),
 		new BrowserSyncPlugin( {
 			files: '**/*.php',
+			injectChanges: true,
 			proxy: 'https://webfoundations.local/',
 		} ),
 	],
