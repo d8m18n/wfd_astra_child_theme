@@ -10,9 +10,7 @@
     "eslint": "eslint 'src/js/**/*.{js,jsx}' --quiet",
     "eslint:fix": "eslint 'src/js/**/*.{js,jsx}' --quiet --fix",
     "stylelint": "stylelint 'src/css/**/*.css' --fix",
-    "stylelint:fix": "stylelint 'src/css/**/*.css' --fix",
-    "format-js": "prettier-eslint --write 'src/js/**/*.{js,jsx}",
-    "format-css": "prettier-eslint --write 'src/css/**/*.css"
+    "stylelint:fix": "stylelint 'src/css/**/*.css' --fix"
   },
   "repository": {
     "type": "git",
@@ -38,13 +36,8 @@
     "css-loader": "^3.3.0",
     "eslint": "^6.6.0",
     "eslint-loader": "^3.0.3",
-    "install": "^0.13.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "npm": "^6.13.4",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "prettier-eslint": "^9.0.1",
-    "prettier-eslint-cli": "^5.0.0",
-    "prettier-stylelint": "^0.4.2",
     "stylelint": "^12.0.0",
     "stylelint-webpack-plugin": "^1.1.2",
     "terser-webpack-plugin": "^2.3.0",
