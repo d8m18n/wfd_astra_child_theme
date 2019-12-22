@@ -52,7 +52,6 @@ module.exports = {
 		],
 	},
 	plugins: [
-
 		new StyleLintPlugin( {
 			files: '/src/**/*.css',
 			fix: true,
