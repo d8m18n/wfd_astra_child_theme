@@ -1,13 +1,13 @@
 {
-    "phpcbf.executablePath": "${workspaceRoot}/vendor/bin/phpcbf",
-    "emmet.includeLanguages": {
-        "postcss": "css"
-    },
-    "emmet.syntaxProfiles": {
-        "postcss": "css"
-    },
-    "files.associations": {
-        "*.css": "postcss"
-    },
-    "editor.insertSpaces": false,
+	"phpcbf.executablePath": "${workspaceRoot}/vendor/bin/phpcbf",
+	"emmet.includeLanguages": {
+		"postcss": "css"
+	},
+	"emmet.syntaxProfiles": {
+		"postcss": "css"
+	},
+	"files.associations": {
+		"*.css": "postcss"
+	},
+	"editor.insertSpaces": false,
 }
