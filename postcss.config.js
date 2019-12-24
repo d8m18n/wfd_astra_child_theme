@@ -1,8 +1,8 @@
 module.exports = {
 	plugins: {
-		'post-css-import': {},
+		'postcss-import': {},
 		'postcss-preset-env': {
-			stage: 0,
+			stage: 1,
 			autoprefixer: {
 				grid: true,
 			},
