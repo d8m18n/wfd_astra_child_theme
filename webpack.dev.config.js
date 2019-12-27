@@ -50,10 +50,16 @@ module.exports = {
 
 			},
 			{
-				test: /\.(png|jpg|gif)$/,
+				test: /\.(png|jpg)$/,
 				use: [
-					'file-loader',
+					{
+						loader: 'file-loader',
+						options: {
+							outputPath: 'images',
+						},
+					},
 				],
+
 			},
 		],
 	},
