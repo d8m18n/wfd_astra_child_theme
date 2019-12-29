@@ -71,7 +71,7 @@ module.exports = {
 			fix: true,
 		} ),
 		new MiniCssExtractPlugin( {
-			filename: 'css/style.css',
+			filename: 'css/[name].css',
 		} ),
 		new CleanWebpackPlugin(),
 		new BrowserSyncPlugin( {
