@@ -9,7 +9,3 @@
 * Modules
 */
 @import "../css/modules/test.css";
-
-.homepage__intro {
-	background-image: url("../images/test-image.jpg");
-}

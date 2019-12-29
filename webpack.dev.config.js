@@ -8,11 +8,13 @@ const StyleLintPlugin = require( 'stylelint-webpack-plugin' );
 
 module.exports = {
 	context: __dirname,
-	entry: './src/js/app.js',
+	entry: {
+		frontend: [ './src/js/app.js', './src/css/style.css' ],
+	},
 	output: {
-		filename: 'js/app.js',
+		filename: 'js/[name].js',
 		path: path.resolve( __dirname, './dist' ),
-		publicPath: '',
+		publicPath: '../',
 	},
 	mode: 'development',
 	devtool: 'source-map',
