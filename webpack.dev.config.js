@@ -7,7 +7,6 @@ const OptimizeCSSAssetsPlugin = require( 'optimize-css-assets-webpack-plugin' );
 const StyleLintPlugin = require( 'stylelint-webpack-plugin' );
 
 module.exports = {
-	context: __dirname,
 	entry: {
 		frontend: [ './src/js/app.js', './src/css/style.css' ],
 	},

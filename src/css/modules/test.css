@@ -1,1 +1,7 @@
+/* .homepage__intro {
+	background-image: url("../../images/test-image.jpg");
+} */
 
+.homepage__intro {
+	background-image: url("../../src/images/test-image.jpg");
+}
