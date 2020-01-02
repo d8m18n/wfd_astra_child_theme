@@ -1,6 +1,6 @@
-/* .homepage__intro {
-	background-image: url("../../images/test-image.jpg");
-} */
+body {
+	background-color: var(--color-brand-primary60);
+}
 
 .homepage__intro {
 	background-image: url("../../src/images/test-image.jpg");
