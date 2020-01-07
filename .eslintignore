@@ -1,0 +1,4 @@
+# Ignore linting on the following folders
+/dist/js/*.js
+/vendor
+/node_modules
