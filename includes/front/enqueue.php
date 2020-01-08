@@ -12,7 +12,7 @@
  *
  * @return void
  */
-function child_enqueue_styles() {
+function wfd_enqueue_styles() {
 
 	$uri = get_theme_file_uri();
 	$ver = WFD_CHILD_DEV_MODE ? time() : false;
