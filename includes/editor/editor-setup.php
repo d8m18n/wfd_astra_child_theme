@@ -30,12 +30,13 @@ function wfd_astra_color_palettes() {
 }
 
 /**
- * Function to provide Gutenberg editor color pallette for your theme design. Probably a few too many, trim to suit your project. This uses WebFoundations naming convention so we only need to change hex codes.
+ * Function to provide Gutenberg editor color pallette for your theme design, and other theme support settings. Probably a few too many colors, trim to suit your project. This uses WebFoundations naming convention for colors so we only need to change hex codes.
  * See https://design.lyft.com/re-approaching-color-9e604ba22c88 and https://www.colorbox.io/
  *
  * @return void
  */
-function wfd_editor_colors() {
+function wfd_editor_setup() {
+	add_theme_support( 'disable-custom-colors' );
 	add_theme_support(
 		'editor-color-palette',
 		array(
@@ -221,13 +222,4 @@ function wfd_editor_colors() {
 			),
 		)
 	);
-}
-
-/**
- * This function disables the custom color picker in the Gutenberg editor. Comment out the hook in functions.php if you want to allow clients to use custom colors.
- *
- * @return void
- */
-function wfd_disable_custom_colors() {
-	add_theme_support( 'disable-custom-colors' );
 }
