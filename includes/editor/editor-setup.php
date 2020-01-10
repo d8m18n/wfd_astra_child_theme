@@ -16,14 +16,14 @@
 function wfd_astra_color_palettes() {
 
 	$color_palettes = array(
-		'#ffffff', // Grey00 ( White )
-		'#020202', // Grey100
-		'#B52003', // Primary80
-		'#C72C05', // Primary70
-		'#D73E0F', // Primary60
-		'#063746', // Secondary80
-		'#136671', // Secondary70
-		'#259296', // Secondary60
+		'#ffffff', // grey-00 ( White )
+		'#020202', // grey-100
+		'#B52003', // primary-80
+		'#C72C05', // primary-70
+		'#D73E0F', // primary-60
+		'#063746', // secondary-80
+		'#136671', // secondary-70
+		'#259296', // secondary-60
 	);
 
 	return $color_palettes;
@@ -41,183 +41,183 @@ function wfd_editor_setup() {
 		'editor-color-palette',
 		array(
 			array(
-				'name'  => __( 'primary100', 'wfd' ),
-				'slug'  => 'primary100',
+				'name'  => __( 'primary-100', 'wfd' ),
+				'slug'  => 'primary-100',
 				'color' => '#8A0B00',
 			),
 			array(
-				'name'  => __( 'primary90', 'wfd' ),
-				'slug'  => 'primary90',
+				'name'  => __( 'primary-90', 'wfd' ),
+				'slug'  => 'primary-90',
 				'color' => '#9F1401',
 			),
 			array(
-				'name'  => __( 'primary80', 'wfd' ),
-				'slug'  => 'primary80',
+				'name'  => __( 'primary-80', 'wfd' ),
+				'slug'  => 'primary-80',
 				'color' => '#B52003',
 			),
 			array(
-				'name'  => __( 'primary70', 'wfd' ),
-				'slug'  => 'primary70',
+				'name'  => __( 'primary-70', 'wfd' ),
+				'slug'  => 'primary-70',
 				'color' => '#C72C05',
 			),
 			array(
-				'name'  => __( 'primary60', 'wfd' ),
-				'slug'  => 'primary60',
+				'name'  => __( 'primary-60', 'wfd' ),
+				'slug'  => 'primary-60',
 				'color' => '#D73E0F',
 			),
 			array(
-				'name'  => __( 'primary50', 'wfd' ),
-				'slug'  => 'primary50',
+				'name'  => __( 'primary-50', 'wfd' ),
+				'slug'  => 'primary-50',
 				'color' => '#E45121',
 			),
 			array(
-				'name'  => __( 'primary40', 'wfd' ),
-				'slug'  => 'primary40',
+				'name'  => __( 'primary-40', 'wfd' ),
+				'slug'  => 'primary-40',
 				'color' => '#ED673B',
 			),
 			array(
-				'name'  => __( 'primary30', 'wfd' ),
-				'slug'  => 'primary30',
+				'name'  => __( 'primary-30', 'wfd' ),
+				'slug'  => 'primary-30',
 				'color' => '#F4835D',
 			),
 			array(
-				'name'  => __( 'primary20', 'wfd' ),
-				'slug'  => 'primary20',
+				'name'  => __( 'primary-20', 'wfd' ),
+				'slug'  => 'primary-20',
 				'color' => '#F9A386',
 			),
 			array(
-				'name'  => __( 'primary10', 'wfd' ),
-				'slug'  => 'primary10',
+				'name'  => __( 'primary-10', 'wfd' ),
+				'slug'  => 'primary-10',
 				'color' => '#FDC7B5',
 			),
 			array(
-				'name'  => __( 'primary05', 'wfd' ),
-				'slug'  => 'primary05',
+				'name'  => __( 'primary-05', 'wfd' ),
+				'slug'  => 'primary-05',
 				'color' => '#FED8CD',
 			),
 			array(
-				'name'  => __( 'primary00', 'wfd' ),
-				'slug'  => 'primary00',
+				'name'  => __( 'primary-00', 'wfd' ),
+				'slug'  => 'primary-00',
 				'color' => '#FFEBE4',
 			),
 			array(
-				'name'  => __( 'secondary100', 'wfd' ),
-				'slug'  => 'secondary100',
+				'name'  => __( 'secondary-100', 'wfd' ),
+				'slug'  => 'secondary-100',
 				'color' => '#060508',
 			),
 			array(
-				'name'  => __( 'secondary90', 'wfd' ),
-				'slug'  => 'secondary90',
+				'name'  => __( 'secondary-90', 'wfd' ),
+				'slug'  => 'secondary-90',
 				'color' => '#0F1227',
 			),
 			array(
-				'name'  => __( 'secondary80', 'wfd' ),
-				'slug'  => 'secondary80',
+				'name'  => __( 'secondary-80', 'wfd' ),
+				'slug'  => 'secondary-80',
 				'color' => '#063746',
 			),
 			array(
-				'name'  => __( 'secondary70', 'wfd' ),
-				'slug'  => 'secondary70',
+				'name'  => __( 'secondary-70', 'wfd' ),
+				'slug'  => 'secondary-70',
 				'color' => '#136671',
 			),
 			array(
-				'name'  => __( 'secondary60', 'wfd' ),
-				'slug'  => 'secondary60',
+				'name'  => __( 'secondary-60', 'wfd' ),
+				'slug'  => 'secondary-60',
 				'color' => '#259296',
 			),
 			array(
-				'name'  => __( 'secondary50', 'wfd' ),
-				'slug'  => 'secondary50',
+				'name'  => __( 'secondary-50', 'wfd' ),
+				'slug'  => 'secondary-50',
 				'color' => '#3DB3B1',
 			),
 			array(
-				'name'  => __( 'secondary40', 'wfd' ),
-				'slug'  => 'secondary40',
+				'name'  => __( 'secondary-40', 'wfd' ),
+				'slug'  => 'secondary-40',
 				'color' => '#58CAC6',
 			),
 			array(
-				'name'  => __( 'secondary30', 'wfd' ),
-				'slug'  => 'secondary30',
+				'name'  => __( 'secondary-30', 'wfd' ),
+				'slug'  => 'secondary-30',
 				'color' => '#77DDDA',
 			),
 			array(
-				'name'  => __( 'secondary20', 'wfd' ),
-				'slug'  => 'secondary20',
+				'name'  => __( 'secondary-20', 'wfd' ),
+				'slug'  => 'secondary-20',
 				'color' => '#9AE9EA',
 			),
 			array(
-				'name'  => __( 'secondary10', 'wfd' ),
-				'slug'  => 'secondary10',
+				'name'  => __( 'secondary-10', 'wfd' ),
+				'slug'  => 'secondary-10',
 				'color' => '#BEF1F5',
 			),
 			array(
-				'name'  => __( 'secondary05', 'wfd' ),
-				'slug'  => 'secondary05',
+				'name'  => __( 'secondary-05', 'wfd' ),
+				'slug'  => 'secondary-05',
 				'color' => '#D9F5FA',
 			),
 			array(
-				'name'  => __( 'secondary00', 'wfd' ),
-				'slug'  => 'secondary00',
+				'name'  => __( 'secondary-00', 'wfd' ),
+				'slug'  => 'secondary-00',
 				'color' => '#F6FDFF',
 			),
 			array(
-				'name'  => __( 'grey100', 'wfd' ), // Black
-				'slug'  => 'grey100',
+				'name'  => __( 'grey-100', 'wfd' ), // Black
+				'slug'  => 'grey-100',
 				'color' => '#020202',
 			),
 			array(
-				'name'  => __( 'grey90', 'wfd' ),
-				'slug'  => 'grey90',
+				'name'  => __( 'grey-90', 'wfd' ),
+				'slug'  => 'grey-90',
 				'color' => '#080808',
 			),
 			array(
-				'name'  => __( 'grey80', 'wfd' ),
-				'slug'  => 'grey80',
+				'name'  => __( 'grey-80', 'wfd' ),
+				'slug'  => 'grey-80',
 				'color' => '#181818',
 			),
 			array(
-				'name'  => __( 'grey70', 'wfd' ),
-				'slug'  => 'grey70',
+				'name'  => __( 'grey-70', 'wfd' ),
+				'slug'  => 'grey-70',
 				'color' => '#323232',
 			),
 			array(
-				'name'  => __( 'grey60', 'wfd' ),
-				'slug'  => 'grey60',
+				'name'  => __( 'grey-60', 'wfd' ),
+				'slug'  => 'grey-60',
 				'color' => '#585858',
 			),
 			array(
-				'name'  => __( 'grey50', 'wfd' ),
-				'slug'  => 'grey50',
+				'name'  => __( 'grey-50', 'wfd' ),
+				'slug'  => 'grey-50',
 				'color' => '#848484',
 			),
 			array(
-				'name'  => __( 'grey40', 'wfd' ),
-				'slug'  => 'grey40',
+				'name'  => __( 'grey-40', 'wfd' ),
+				'slug'  => 'grey-40',
 				'color' => '#AEAEAE',
 			),
 			array(
-				'name'  => __( 'grey30', 'wfd' ),
-				'slug'  => 'grey30',
+				'name'  => __( 'grey-30', 'wfd' ),
+				'slug'  => 'grey-30',
 				'color' => '#D1D1D1',
 			),
 			array(
-				'name'  => __( 'grey20', 'wfd' ),
-				'slug'  => 'grey20',
+				'name'  => __( 'grey-20', 'wfd' ),
+				'slug'  => 'grey-20',
 				'color' => '#E9E9E9',
 			),
 			array(
-				'name'  => __( 'grey10', 'wfd' ),
-				'slug'  => 'grey10',
+				'name'  => __( 'grey-10', 'wfd' ),
+				'slug'  => 'grey-10',
 				'color' => '#F7F7F7',
 			),
 			array(
-				'name'  => __( 'grey05', 'wfd' ),
-				'slug'  => 'grey05',
+				'name'  => __( 'grey-05', 'wfd' ),
+				'slug'  => 'grey-05',
 				'color' => '#FBFBFB',
 			),
 			array(
-				'name'  => __( 'grey00', 'wfd' ), // White
-				'slug'  => 'grey00',
+				'name'  => __( 'grey-00', 'wfd' ), // White
+				'slug'  => 'grey-00',
 				'color' => '#FFFFFF',
 			),
 		)
