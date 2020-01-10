@@ -1,7 +1,8 @@
 <?php
 /**
  * Wfd-child editor colors.
- * In this file we create color pallettes for both the color picker in the customizer, and the color  pallettes offered in blocks.
+ * In this file we create color pallettes for both the color picker in the customizer, and the color
+ * pallettes offered in blocks.
  *
  * @package WordPress
  * @subpackage Wfd-child
@@ -30,8 +31,12 @@ function wfd_astra_color_palettes() {
 }
 
 /**
- * Function to provide Gutenberg editor color pallette for your theme design, and other theme support settings. Probably a few too many colors, trim to suit your project. This uses WebFoundations naming convention for colors so we only need to change hex codes.
+ * Function to provide Gutenberg editor color pallette for your theme design, and other theme support settings.
+ * Probably a few too many colors, trim to suit your project. This uses WebFoundations generic naming convention
+ * for colors so we only need to change hex codes.
  * See https://design.lyft.com/re-approaching-color-9e604ba22c88 and https://www.colorbox.io/
+ * Editor color pallette css variables are set in src/css/base/variables.css their classes defined
+ * in src/css/base/editor-colors.css
  *
  * @return void
  */
