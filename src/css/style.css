@@ -5,8 +5,9 @@
 
 @import "../css/base/variables.css";
 @import "../css/base/editor-colors.css";
+@import "../css/base/typography.css";
 
 /*
 * Modules
 */
-@import "../css/modules/test.css";
+@import "../css/modules/gravity-forms.css";
