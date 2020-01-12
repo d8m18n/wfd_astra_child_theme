@@ -11,6 +11,7 @@ The premise behind the use case for the child theme is as follows;
 
 ## Features
 * Javascript, CSS and images processed by Webpack
+* Asynchronous loading of our Javascript bundle
 * CSS processed through [PostCSS PresetEnv](https://preset-env.cssdb.org/)
 * CSS linting using Stylelint using the [@10up/stylelint-config](https://github.com/10up/stylelint-config) rules, mainly due to their use of PostCss PresetEnv.
 * php linting using [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) and the WordPress coding standards ( installed by Composer ).
@@ -18,4 +19,3 @@ The premise behind the use case for the child theme is as follows;
 
 ## To do
 * Create more efficient settings option for webpack
-* async loading of js
