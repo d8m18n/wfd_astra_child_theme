@@ -24,5 +24,6 @@ function wfd_enqueue_styles() {
 	wp_register_script( 'astra-child-theme-bundle', $uri . '/dist/js/frontend.js', [], $ver, true );
 
 	wp_enqueue_script( 'astra-child-theme-bundle' );
+	wp_script_add_data( 'astra-child-theme-bundle', 'async', true );
 
 }
