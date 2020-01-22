@@ -19,7 +19,7 @@ function wfd_astra_color_palettes() {
 	$color_palettes = array(
 		'#ffffff', // grey-00 ( White )
 		'#020202', // grey-100
-		'#B52003', // primary-80
+		'#9F1401', // primary-90
 		'#C72C05', // primary-70
 		'#D73E0F', // primary-60
 		'#063746', // secondary-80

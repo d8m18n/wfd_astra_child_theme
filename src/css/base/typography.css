@@ -2,7 +2,19 @@
 
 /* Typography styles where no options exist in the theme or blocks */
 
-/* Adjust letter spacing on headings  */ 
-h2 {
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+@custom-selector :--heading-top3 h1, h2, h3;
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Adjust letter spacing on top three headings  */
+ 
+:--heading-top3 {
 	letter-spacing: 1px;
+
+	& a:hover {
+		text-decoration: none;
+	}
 }
