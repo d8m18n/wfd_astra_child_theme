@@ -28,3 +28,29 @@ function wfd_filter_script_loader_tag( $tag, $handle ) {
 	return $tag;
 }
 
+/**
+ * We can't control the scripts loaded by plugins so this function adds defer
+ * to any scripts that are not specifically excluded or where we've added async as above.
+ * See https://www.youtube.com/watch?v=PlTG5I6Qi-o
+ * This 'should' assist with avoiding render blocking and keep our site loading quickly.
+ *
+ * @param [type] $url
+ * @return $url
+ */
+function wfd_defer_parsing_of_js( $url ) {
+	if ( is_admin() ) {
+		return $url; // don't break WP Admin
+	}
+	if ( false === strpos( $url, '.js' ) ) {
+		return $url;
+	}
+	if ( strpos( $url, 'jquery.js' ) ) {
+		return $url;
+	}
+	// don't change our bundle (frontend.js) as we've added async to this already - see above function.
+	if ( strpos( $url, 'frontend.js' ) ) {
+		return $url;
+	}
+	return str_replace( 'src', 'defer src', $url );
+}
+
