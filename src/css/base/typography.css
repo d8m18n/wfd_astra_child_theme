@@ -18,3 +18,20 @@ a:hover {
 		text-decoration: none;
 	}
 }
+
+/* Adjust comments headings. */
+
+.comment-reply-title {
+	font-size: 30px;
+	font-size: 1.5rem;
+
+	@media ( width <= 768px ) {
+		font-size: 28px;
+		font-size: 1.4rem;
+	}
+
+	@media ( width <= 544px ) {
+		font-size: 26px;
+		font-size: 1.3rem;
+	}
+}

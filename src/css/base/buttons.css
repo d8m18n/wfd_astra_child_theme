@@ -1,0 +1,9 @@
+/* BUTTONS */
+
+/* Button styles where no options exist in the theme or blocks */
+
+/* fix border radius on comment button to bring in line with the
+ rest of the site */
+#comments .submit {
+	border-radius: 4px;
+}
