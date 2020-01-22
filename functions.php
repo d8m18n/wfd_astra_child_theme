@@ -19,7 +19,7 @@ define( 'WFD_CHILD_DEV_MODE', true );
  */
 require_once get_theme_file_path( '/includes/front/enqueue.php' );
 require_once get_theme_file_path( '/includes/editor/editor-setup.php' );
-require_once get_theme_file_path( '/includes/front/async.php' );
+require_once get_theme_file_path( '/includes/front/async-defer.php' );
 require_once get_theme_file_path( '/includes/front/blog-navigation.php' );
 
 /**
