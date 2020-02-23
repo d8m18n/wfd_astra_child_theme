@@ -17,9 +17,9 @@ function wfd_enqueue_styles() {
 	$uri = get_theme_file_uri();
 	$ver = WFD_CHILD_DEV_MODE ? time() : false;
 
-	wp_register_style( 'astra-child-theme-css', $uri . '/dist/css/frontend.css', [ 'astra-theme-css' ], $ver, 'all' );
+	wp_register_style( 'astra-child-theme-styles', $uri . '/dist/css/frontend.css', [ 'astra-theme-css' ], $ver, 'all' );
 
-	wp_enqueue_style( 'astra-child-theme-css' );
+	wp_enqueue_style( 'astra-child-theme-styles' );
 
 	wp_register_script( 'astra-child-theme-bundle', $uri . '/dist/js/frontend.js', [], $ver, true );
 

@@ -17,12 +17,11 @@
  * @return array $urls           URLs to print for resource hints.
  */
 function wfd_resource_hints( $urls, $relation_type ) {
+	if ( wp_style_is( 'astra-google-fonts', 'enqueued' ) && 'preconnect' === $relation_type ) {
 		$urls[] = array(
 			'href' => 'https://fonts.gstatic.com',
 			'crossorigin',
 		);
+	}
 	return $urls;
 }
-
-
-
