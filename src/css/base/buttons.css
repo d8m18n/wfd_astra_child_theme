@@ -7,3 +7,33 @@
 #comments .submit {
 	border-radius: 4px;
 }
+
+/* Footer widget button */
+.footer__button {
+	display: flex;
+	justify-content: center;
+	margin: 1rem 0 0 0;
+}
+
+.button-secondary {
+	background-color: var(--primary-60);
+	border-color: var(--primary-60);
+
+	&:hover {
+		background-color: var(--primary-80);
+		border-color: var(--primary-80);
+		text-decoration: none;
+	}
+
+}
+
+/* Shadows */
+
+.uagb-button__link,
+.button {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+	&:hover {
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+	}
+}
