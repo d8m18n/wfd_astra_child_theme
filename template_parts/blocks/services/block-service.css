@@ -1,0 +1,26 @@
+.homepage-service {
+	display: grid;
+	grid-column-gap: 1rem;
+	grid-row-gap: 0;
+	grid-template-columns: 70px 1fr;
+}
+
+.service-icon {
+	grid-column: 1/2;
+}
+
+.service-heading {
+	display: flex;
+	flex-direction: column;
+	grid-column: 2/3;
+	justify-content: center;
+}
+
+h2.service-title {
+	margin: 0;
+	padding: 0;
+}
+
+.service-description {
+	grid-column: 2/3;
+}
