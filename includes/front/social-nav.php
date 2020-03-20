@@ -21,7 +21,7 @@ function wfd_register_social_menu() {
 function wfd_add_social_links() {
 	if ( has_nav_menu( 'social' ) ) {
 		?>
-		<nav class="poo-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentynineteen' ); ?>">
+		<nav class="poo-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'wfd' ); ?>">
 		<?php
 
 		wp_nav_menu(
@@ -29,7 +29,7 @@ function wfd_add_social_links() {
 				'theme_location' => 'social',
 				'menu_class'     => 'social-links-menu',
 				'link_before'    => '<span class="screen-reader-text">',
-				'link_after'     => '</span>' . twentynineteen_get_social_icon_svg( 'link' ),
+				'link_after'     => '</span>' . wfd_get_social_icon_svg( 'link' ),
 				'depth'          => 1,
 			)
 		)
