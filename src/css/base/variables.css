@@ -47,4 +47,12 @@
 
 	--black: var(--grey-100);
 	--white: var(--grey-00);
+
+	/* social Media colors */
+
+	--facebook: #1877f2;
+	--instagram: #c32aa3;
+	--twitter: #1da1f2;
+	--linkedin: #007bb5;
+
 }

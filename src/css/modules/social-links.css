@@ -1,0 +1,50 @@
+/* Social Links Menu */
+
+nav.social-navigation {
+	background-color: var(--secondary-80);
+}
+
+.menu-social-links-menu-container {
+	margin: 0 auto;
+	max-width: 1200px;
+
+	& ul {
+		height: 60px;
+		list-style: none;
+		margin: 0;
+		padding-top: 1rem;
+		text-align: center;
+
+		& li {
+			align-items: center;
+			display: inline-flex;
+			height: 60px;
+			margin: 0 0.85rem 0 0;
+
+			& a {
+				background-color: var(--secondary-60);
+				border-radius: 100%;
+				display: inline-block;
+				fill: var(--white);
+				line-height: 1;
+				padding: 4px;
+			}
+
+			& a[href^="https://facebook.com"]:hover {
+				background-color: var(--facebook);
+			}
+
+			& a[href^="https://twitter.com"]:hover {
+				background-color: var(--twitter);
+			}
+
+			& a[href^="https://instagram.com"]:hover {
+				background-color: var(--instagram);
+			}
+
+			& a[href^="https://linkedin.com"]:hover {
+				background-color: var(--linkedin);
+			}
+		}
+	}
+}

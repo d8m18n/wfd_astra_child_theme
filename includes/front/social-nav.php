@@ -21,7 +21,7 @@ function wfd_register_social_menu() {
 function wfd_add_social_links() {
 	if ( has_nav_menu( 'social' ) ) {
 		?>
-		<nav class="poo-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'wfd' ); ?>">
+		<nav class="social-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'wfd' ); ?>">
 		<?php
 
 		wp_nav_menu(
