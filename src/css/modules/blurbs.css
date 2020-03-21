@@ -13,3 +13,25 @@
 		}
 	}
 }
+
+/* Stop headline spliting into two rows on tablet in landscape mode */
+@media only screen 
+	and (min-device-width: 768px) 
+	and (max-device-width: 1024px) 
+	and (orientation: landscape) {
+
+	.blurbs__blurb h2 {
+		font-size: 1.4rem;
+	}
+}
+
+@media only screen 
+	and (min-device-width: 768px) 
+	and (max-device-width: 1024px) 
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+	.blurbs__blurb h2 {
+		font-size: 1.4rem;
+	}
+}
