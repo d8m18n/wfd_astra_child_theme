@@ -1,0 +1,15 @@
+/* BLURBS */
+.blurbs {
+
+	& .blurbs__column {
+		margin-bottom: 2.6em;
+
+		&.no_bottom_margin {
+			margin-bottom: 0;
+		}
+
+		@media (width > 768px) {
+			margin-bottom: 0;
+		}
+	}
+}
