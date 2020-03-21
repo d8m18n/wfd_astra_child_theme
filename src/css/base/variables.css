@@ -49,10 +49,17 @@
 	--white: var(--grey-00);
 
 	/* social Media colors */
-
 	--facebook: #1877f2;
 	--instagram: #c32aa3;
 	--twitter: #1da1f2;
 	--linkedin: #007bb5;
 
+	/* Breakpoints 
+	* For breakpoints we're using a mobile first approach with the Astra themes
+	* breakpoints at 544px for mobile and 768 for tablet.
+	* 
+	*/
+
+	--mobile: 544px;
+	--tablet: 768px;
 }

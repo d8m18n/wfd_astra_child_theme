@@ -1,0 +1,13 @@
+/* CALLOUTS */
+.services__callout {
+
+	& .services__callout-content {
+		font-size: 1.2rem;
+		margin: 0;
+		padding-top: 1rem;
+
+		@media (width > 768px) {
+			font-size: 1.5rem;
+		}
+	}
+}
