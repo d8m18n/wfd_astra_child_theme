@@ -1,0 +1,21 @@
+/* PAGE RELATED STYLING */
+
+/* adjust mobile layout for image and content sections */
+
+.image-and-copy {
+
+	@media ( width <= 768px ) {
+
+		& .image-and-copy__wrap-left {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+@media ( width > 768px ) {
+
+	.image-and-copy__img {
+		padding-top: 20px;
+	}
+}
+
