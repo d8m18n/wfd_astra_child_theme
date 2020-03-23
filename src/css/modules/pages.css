@@ -12,6 +12,13 @@
 	}
 }
 
+@media ( width <= 768px ) {
+
+	.image-and-copy__img img {
+		max-width: 70%;
+	}
+}
+
 @media ( width > 768px ) {
 
 	.image-and-copy__img {

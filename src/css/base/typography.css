@@ -61,3 +61,7 @@ a:hover {
 		}
 	}
 }
+
+figcaption {
+	font-size: 0.9rem;
+}
