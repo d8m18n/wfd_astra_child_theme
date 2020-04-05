@@ -65,3 +65,10 @@ a:hover {
 figcaption {
 	font-size: 0.9rem;
 }
+
+#astra-portfolio {
+
+	& .item-title {
+		font-weight: 400;
+	}
+}

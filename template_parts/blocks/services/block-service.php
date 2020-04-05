@@ -20,6 +20,7 @@ $service_icon        = get_field( 'service_icon' );
 $service_title       = get_field( 'service_title' );
 $service_description = get_field( 'service_description' );
 $size                = 'full';
+$icon                = true;
 
 ?>
 
@@ -27,7 +28,7 @@ $size                = 'full';
 	<?php
 	if ( $service_icon ) {
 		echo '<div class="service-icon">';
-		echo wp_get_attachment_image( $service_icon, $size );
+		echo wp_get_attachment_image( $service_icon, $size, $icon );
 		echo '</div>';
 	}
 	if ( $service_title ) {
