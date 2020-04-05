@@ -11,27 +11,37 @@
 		@media (width > 768px) {
 			margin-bottom: 0;
 		}
-	}
 
-	/* Stop headline spliting into two rows on tablet in landscape mode */
-	@media only screen 
-		and (min-device-width: 768px) 
-		and (max-device-width: 1024px) 
-		and (orientation: landscape) {
+		/** Adjust font sizing so headings don't split lines on tablet oriantations **/
+		@media only screen 
+			and (min-device-width: 768px) 
+			and (max-device-width: 1024px) 
+			and (orientation: landscape) {
 
-		.blurbs__blurb h2 {
-			font-size: 1.4rem;
+			& h2.blurbs__heading {
+				font-size: 1.4rem;
+			}
 		}
-	}
 
+		@media only screen 
+			and (min-device-width: 768px) 
+			and (max-device-width: 1024px) 
+			and (orientation: portrait)
+			and (-webkit-min-device-pixel-ratio: 2) {
+
+			& h2.blurbs__heading {
+				font-size: 1.4rem;
+			}
+		}
+
+	} /** end column **/
+
+	/** display block on tablet in portrait mode so blurbs will stack **/
 	@media only screen 
 		and (min-device-width: 768px) 
-		and (max-device-width: 1024px) 
+		and (max-device-width: 1023px) 
 		and (orientation: portrait)
 		and (-webkit-min-device-pixel-ratio: 2) {
-
-		.blurbs__blurb h2 {
-			font-size: 1.4rem;
-		}
+		display: block;
 	}
 }
