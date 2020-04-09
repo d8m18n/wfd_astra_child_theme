@@ -26,8 +26,8 @@ nav.social-navigation {
 				border-radius: 100%;
 				display: inline-block;
 				fill: var(--white);
-				line-height: 1;
-				padding: 4px;
+				line-height: 0;
+				padding: 6px;
 			}
 
 			& a[href^="https://facebook.com"]:hover {
