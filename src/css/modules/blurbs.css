@@ -12,7 +12,8 @@
 			margin-bottom: 0;
 		}
 
-		/** Adjust font sizing so headings don't split lines on tablet oriantations **/
+		/** Adjust font sizing so headings don't 
+		split lines on tablet oriantations **/
 		@media only screen 
 			and (min-device-width: 768px) 
 			and (max-device-width: 1024px) 
