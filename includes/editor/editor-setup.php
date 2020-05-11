@@ -93,7 +93,7 @@ function wfd_editor_setup() {
 			array(
 				'name'  => __( 'secondary-lighter', 'wfd' ),
 				'slug'  => 'secondary-lighter',
-				'color' => '#7ABAE',
+				'color' => '#7ABAE8',
 			),
 			array(
 				'name'  => __( 'secondary-50', 'wfd' ),
@@ -114,11 +114,6 @@ function wfd_editor_setup() {
 				'name'  => __( 'secondary-05', 'wfd' ),
 				'slug'  => 'secondary-05',
 				'color' => '#EFF8FF',
-			),
-			array(
-				'name'  => __( 'secondary-00', 'wfd' ),
-				'slug'  => 'secondary-00',
-				'color' => '#F6FDFF',
 			),
 			array(
 				'name'  => __( 'neutral', 'wfd' ), // Black
