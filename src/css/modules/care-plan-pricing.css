@@ -24,6 +24,10 @@
 	}
 }
 
+.gb-grid-wrapper > .gb-grid-column > .gb-container.care-plan-pricing__column {
+	height: auto;
+}
+
 /* care-plan-pricing__subheading */
 
 /* care-plan-pricing__column-headline */
