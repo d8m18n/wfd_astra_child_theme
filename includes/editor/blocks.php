@@ -1,10 +1,10 @@
 <?php
 /**
- * Wfd-child register blocks.
+ * wfd-child register blocks.
  * Registering custom blocks used in thois site ( created with ACF Pro ).
  *
  * @package WordPress
- * @subpackage Wfd-child
+ * @subpackage wfd-child
  * @since wfd-child 1.0.0
  */
 

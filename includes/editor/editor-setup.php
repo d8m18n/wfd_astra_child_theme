@@ -1,11 +1,11 @@
 <?php
 /**
- * Wfd-child editor colors.
+ * wfd-child editor colors.
  * In this file we create color pallettes for both the color picker in the customizer, and the color
  * pallettes offered in blocks.
  *
  * @package WordPress
- * @subpackage Wfd-child
+ * @subpackage wfd-child
  * @since wfd-child 1.0.0
  */
 

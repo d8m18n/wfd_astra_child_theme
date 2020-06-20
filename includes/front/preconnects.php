@@ -1,9 +1,9 @@
 <?php
 /**
- * Wfd-child preconnect functions. Functions that add preconnects to required resources.
+ * wfd-child preconnect functions. Functions that add preconnects to required resources.
  *
  * @package WordPress
- * @subpackage Wfd-child
+ * @subpackage wfd-child
  * @since wfd-child 1.0.0
  */
 

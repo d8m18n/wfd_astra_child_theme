@@ -1,9 +1,9 @@
 <?php
 /**
- * Wfd-child SEO functions. Functions that rectify SEO issues.
+ * wfd-child SEO functions. Functions that rectify SEO issues.
  *
  * @package WordPress
- * @subpackage Wfd-child
+ * @subpackage wfd-child
  * @since wfd-child 1.0.0
  */
 

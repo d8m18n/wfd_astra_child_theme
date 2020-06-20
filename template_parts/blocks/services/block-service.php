@@ -3,7 +3,7 @@
  * Render template for the Frontpage Services Block
  *
  * @package WordPress
- * @subpackage Wfd-child
+ * @subpackage wfd-child
  * @since wfd-child 1.0.0
  */
 

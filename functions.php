@@ -11,7 +11,7 @@
 /**
  * Define Constants
  */
-define( 'WFD_CHILD_DEV_MODE', true );
+define( 'CHILD_DEV_MODE', true );
 
 
 /**

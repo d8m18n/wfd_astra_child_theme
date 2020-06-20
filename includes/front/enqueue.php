@@ -1,9 +1,9 @@
 <?php
 /**
- * Wfd-child enqueue scripts.
+ * wfd-child enqueue scripts.
  *
  * @package WordPress
- * @subpackage Wfd-child
+ * @subpackage wfd-child
  * @since wfd-child 1.0.0
  */
 
@@ -15,7 +15,7 @@
 function wfd_enqueue_styles() {
 
 	$uri = get_theme_file_uri();
-	$ver = WFD_CHILD_DEV_MODE ? time() : false;
+	$ver = CHILD_DEV_MODE ? time() : false;
 
 	wp_register_style( 'astra-child-theme-styles', $uri . '/dist/css/frontend.css', [ 'astra-theme-css' ], $ver, 'all' );
 
