@@ -19,7 +19,11 @@
  *
  * @since 1.0.0
  */
+<<<<<<< HEAD
 class Wfd_SVG_Icons {
+=======
+class wfd_SVG_Icons {
+>>>>>>> f73117ad94e01c320add39be4392a633a77848df
 
 	/**
 	 * Gets the SVG code for a given icon.

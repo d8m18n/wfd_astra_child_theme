@@ -77,7 +77,7 @@ module.exports = {
 		new BrowserSyncPlugin( {
 			files: '**/*.php',
 			injectChanges: true,
-			proxy: 'https://webfoundations.local/',
+			proxy: 'https://bricoleurtech.local/',
 		} ),
 	],
 };

@@ -1,4 +1,6 @@
 {
+    "name": "WebFoundations",
+    "description": "WebFoundations requirements",
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5"
     }

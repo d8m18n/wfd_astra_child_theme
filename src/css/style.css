@@ -12,16 +12,20 @@
 * Modules
 */
 @import "../css/modules/gravity-forms.css";
-@import "../css/modules/hero.css";
-@import "../css/modules/blurbs.css";
-@import "../css/modules/callouts.css";
-@import "../css/modules/care-plan-pricing.css";
-@import "../css/modules/pages.css";
-@import "../css/modules/team-profile.css";
-@import "../css/modules/social-links.css";
-@import "../css/modules/footer.css";
+<<<<<<< HEAD
+@import "../css/modules/hero.css"
+@import "../c	ss/modules/blurbs.css"
+@import "../c	ss/modules/callouts.css"
+@import "../c	ss/modules/care-plan-pricing.css"
+@import "../c	ss/modules/pages.css"
+@import "../c	ss/modules/team-profile.css"
+@import "../c	ss/modules/social-links.css"
+@import "../c	ss/modules/footer.css"
 
 /*
 * Utilities
 */
-@import "../css/utilities/utility-classes.css";
+@import "../css/utilities/utility-classes.css"
+=======
+@import "../css/modules/social-links.css"
+>>>>>>> f73117ad94e01c320add39be4392a633a77848df

@@ -9,6 +9,7 @@ a:hover {
 	text-decoration: underline;
 }
 
+<<<<<<< head
 /* Adjust letter spacing on top three headings  */
  
 :--heading-top3 {
@@ -72,3 +73,5 @@ figcaption {
 		font-weight: 400;
 	}
 }
+=======
+>>>>>>> f73117ad94e01c320add39be4392a633a77848df

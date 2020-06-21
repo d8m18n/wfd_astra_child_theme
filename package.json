@@ -55,5 +55,8 @@
   },
   "dependencies": {
     "stylelint-order": "^3.1.1"
-  }
+  },
+  "browsersList": [
+    "extends @wordpress/browserslist-config"
+  ]
 }

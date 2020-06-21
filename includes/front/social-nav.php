@@ -1,9 +1,16 @@
 <?php
 /**
+<<<<<<< HEAD
  * wfd-child Social Navigation with SVG Icons.
  *
  * @package WordPress
  * @subpackage wfd-child
+=======
+ * Wfd-child Social Navigation with SVG Icons.
+ *
+ * @package WordPress
+ * @subpackage Wfd-child
+>>>>>>> f73117ad94e01c320add39be4392a633a77848df
  * @since wfd-child 1.0.0
  */
 
