@@ -33,11 +33,8 @@ require_once get_theme_file_path( '/includes/editor/blocks.php' );
  */
 add_action( 'wp_enqueue_scripts', 'wfd_enqueue_styles', 10 );
 add_action( 'after_setup_theme', 'wfd_editor_setup', 15 );
-<<<<<<< HEAD
 add_action( 'after_setup_theme', 'wfd_editor_gradients', 15 );
 add_action( 'acf/init', 'wfd_services_block' );
-=======
->>>>>>> f73117ad94e01c320add39be4392a633a77848df
 add_action( 'init', 'wfd_register_social_menu' );
 add_action( 'astra_footer_before', 'wfd_add_social_links' );
 add_filter( 'script_loader_tag', 'wfd_filter_script_loader_tag', 10, 2 );
