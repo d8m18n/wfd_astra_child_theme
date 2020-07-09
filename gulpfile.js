@@ -4,6 +4,10 @@ const replace = require( 'gulp-replace' );
 const info = require( './package.json' );
 const del = require( 'del' );
 
+const themeName = info.name;
+const themeVersion = info.version;
+const theme = `${ themeName }-${ themeVersion }`;
+
 function clean( cr ) {
 	del( [ 'themeBundle' ] );
 	return cr();
@@ -32,8 +36,8 @@ function bundle() {
 		'!webpack.dev.config.js',
 		'!webpack.production.config.js',
 	] )
-		.pipe( replace( 'wfd Dev Child 1.0.7', info.name ) )
-		.pipe( zip( `${ info.name }.zip` ) )
+		.pipe( replace( 'wfd Dev Child', theme ) )
+		.pipe( zip( `${ theme }.zip` ) )
 		.pipe( gulp.dest( 'themeBundle' ) );
 }
 exports.clean = clean;

@@ -1,5 +1,5 @@
 {
-  "name": "wfd-1.0.7",
+  "name": "wfd-child",
   "version": "1.0.7",
   "description": "WebFoundations child theme starter for Astra Theme based website projects.",
   "main": "/src/js/app.js",
