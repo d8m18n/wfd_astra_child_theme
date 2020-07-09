@@ -2,7 +2,6 @@ const gulp = require( 'gulp' );
 const zip = require( 'gulp-zip' );
 const replace = require( 'gulp-replace' );
 const info = require( './package.json' );
-const { series } = require( 'gulp' );
 const del = require( 'del' );
 
 function clean( cr ) {
