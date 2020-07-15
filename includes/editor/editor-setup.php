@@ -156,37 +156,37 @@ function wfd_editor_setup() {
 				'color' => '#fafafa',
 			),
 			array(
-				'name'  => __( 'white', 'wfd' ), // White
+				'name'  => __( 'white', 'wfd' ),
 				'slug'  => 'white',
 				'color' => '#FFFFFF',
 			),
 			array(
-				'name'  => __( 'ui-red', 'wfd' ), // White
+				'name'  => __( 'ui-red', 'wfd' ),
 				'slug'  => 'ui-red',
 				'color' => '#DF2A4A',
 			),
 			array(
-				'name'  => __( 'ui-red-darker', 'wfd' ), // White
+				'name'  => __( 'ui-red-darker', 'wfd' ),
 				'slug'  => 'ui-red-darker',
 				'color' => '#AB2039',
 			),
 			array(
-				'name'  => __( 'ui-red-lighter', 'wfd' ), // White
+				'name'  => __( 'ui-red-lighter', 'wfd' ),
 				'slug'  => 'ui-red-lighter',
 				'color' => '#F83C5D',
 			),
 			array(
-				'name'  => __( 'ui-green', 'wfd' ), // White
+				'name'  => __( 'ui-green', 'wfd' ),
 				'slug'  => 'ui-green',
 				'color' => '#32A27A',
 			),
 			array(
-				'name'  => __( 'ui-green-darker', 'wfd' ), // White
+				'name'  => __( 'ui-green-darker', 'wfd' ),
 				'slug'  => 'ui-green-darker',
 				'color' => '#278060',
 			),
 			array(
-				'name'  => __( 'ui-green-lighter', 'wfd' ), // White
+				'name'  => __( 'ui-green-lighter', 'wfd' ),
 				'slug'  => 'ui-green-lighter',
 				'color' => '#4DC69A',
 			),
