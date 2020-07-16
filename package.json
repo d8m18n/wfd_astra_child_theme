@@ -19,7 +19,8 @@
     "lint-staged": {
         "src/**/*.js": "eslint",
         "**/*.{js,json,css,scss}": [
-            "prettier --write"
+            "prettier --write",
+            "git add"
         ]
     },
     "repository": {
