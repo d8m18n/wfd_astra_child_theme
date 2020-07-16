@@ -6,72 +6,62 @@
 @custom-selector :--heading-top3 h1, h2, h3;
 
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
-<<<<<<< head
 /* Adjust letter spacing on top three headings  */
- 
-:--heading-top3 {
-	letter-spacing: 1px;
 
-	& a:hover {
-		text-decoration: none;
-	}
+:--heading-top3 {
+    letter-spacing: 1px;
+
+    & a:hover {
+        text-decoration: none;
+    }
 }
 
 /* Adjust comments headings. */
 
 .comment-reply-title {
-	font-size: 30px;
-	font-size: 1.5rem;
+    font-size: 30px;
+    font-size: 1.5rem;
 
-	@media ( width <= 768px ) {
-		font-size: 28px;
-		font-size: 1.4rem;
-	}
+    @media (width <= 768px) {
+        font-size: 28px;
+        font-size: 1.4rem;
+    }
 
-	@media ( width <= 544px ) {
-		font-size: 26px;
-		font-size: 1.3rem;
-	}
+    @media (width <= 544px) {
+        font-size: 26px;
+        font-size: 1.3rem;
+    }
 }
 
 /* Adjust footer font sizing */
 
 .site-footer {
-	
-	font-size: 0.9rem;
+    font-size: 0.9rem;
 
-	& .widget-title {
-		font-size: 1.2rem;
-	}
+    & .widget-title {
+        font-size: 1.2rem;
+    }
 }
 
-@media only screen 
-	and (min-device-width: 768px) 
-	and (max-device-width: 1024px) 
-	and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .site-footer {
+        font-size: 0.7rem;
 
-	.site-footer {
-	
-		font-size: 0.7rem;
-
-		& .widget-title {
-			font-size: 1.1rem;
-		}
-	}
+        & .widget-title {
+            font-size: 1.1rem;
+        }
+    }
 }
 
 figcaption {
-	font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 #astra-portfolio {
-
-	& .item-title {
-		font-weight: 400;
-	}
+    & .item-title {
+        font-weight: 400;
+    }
 }
-=======
->>>>>>> f73117ad94e01c320add39be4392a633a77848df

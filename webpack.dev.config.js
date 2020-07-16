@@ -24,21 +24,22 @@ module.exports = {
       {
         test: /\.$js/,
         enforce: "pre",
-        loader: "eslint-loader",
-        options: {
-          fix: true,
-        },
-      },
-      {
-        test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/env"],
-            plugins: ["transform-class-properties"],
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/env"],
+              plugins: ["transform-class-properties"],
+            },
           },
-        },
+          {
+            loader: "eslint-loader",
+            options: {
+              fix: true,
+            },
+          },
+        ],
       },
       {
         test: /\.css/,
