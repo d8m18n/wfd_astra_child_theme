@@ -11,6 +11,17 @@
         "dev": "gulp clean && webpack --watch --config webpack.dev.config.js",
         "lint": "eslint src"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.js": "eslint",
+        "**/*.{js,json,css,scss}": [
+            "prettier --write"
+        ]
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/d8m18n/wfd_astra_child_theme.git"
