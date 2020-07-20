@@ -2,6 +2,6 @@
     "phpcs.enable": true,
     "phpcs.executablePath": "./vendor/bin/phpcs",
     "phpcs.standard": "WordPress",
-    "phpcbf.executablePath": "${workspaceRoot}/vendor/bin/phpcbf",
+    "phpcbf.executablePath": "./vendor/bin/phpcbf",
     "phpcbf.onsave": true,
 }
