@@ -6,10 +6,10 @@
   "scripts": {
     "checkFormat": "prettier --check \"**.*.{js,json,css,scss}\"",
     "format": "prettier --write \"**.*.{js,json,css,scss}\"",
-    "test": "echo 'Error: no test specified' && exit 1",
-    "build": "webpack --config webpack.production.config.js && gulp bundle",
-    "dev": "gulp clean && webpack --watch --config webpack.dev.config.js",
-    "lint": "eslint src"
+    "build": "npm run lint && webpack --config webpack.production.config.js && gulp bundle",
+    "dev": "npm run lint && gulp clean && webpack --watch --config webpack.dev.config.js",
+    "lint": "eslint src",
+    "test": "echo 'Error: no test specified' && exit 1"
   },
   "repository": {
     "type": "git",

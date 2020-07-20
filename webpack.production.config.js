@@ -21,14 +21,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.$js/,
-                enforce: "pre",
-                loader: "eslint-loader",
-                options: {
-                    fix: true
-                }
-            },
-            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
@@ -37,6 +29,14 @@ module.exports = {
                         presets: ["@babel/env"],
                         plugins: ["transform-class-properties"]
                     }
+                }
+            },
+            {
+                test: /\.$js/,
+                enforce: "pre",
+                loader: "eslint-loader",
+                options: {
+                    fix: true
                 }
             },
             {
