@@ -5,19 +5,20 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
+
 module.exports = {
   entry: {
-    frontend: ["./src/js/app.js", "./src/css/style.css"],
+    frontend: ["./src/js/index.js", "./src/scss/style.scss"]
   },
   output: {
     filename: "js/[name].js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "../",
+    publicPath: "../"
   },
   mode: "development",
   devtool: "source-map",
   optimization: {
-    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
   },
   module: {
     rules: [
@@ -30,20 +31,20 @@ module.exports = {
             loader: "babel-loader",
             options: {
               presets: ["@babel/env"],
-              plugins: ["transform-class-properties"],
-            },
+              plugins: ["transform-class-properties"]
+            }
           },
           {
             loader: "eslint-loader",
             options: {
-              fix: true,
-            },
-          },
-        ],
+              fix: true
+            }
+          }
+        ]
       },
       {
-        test: /\.css/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+        test: /\.(sa|sc|c)ss$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
       },
       {
         test: /\.(png|jpg)$/,
@@ -52,22 +53,22 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "images",
-            },
-          },
-        ],
-      },
-    ],
+              outputPath: "images"
+            }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/[name].css",
+      filename: "css/[name].css"
     }),
     new CleanWebpackPlugin(),
     new BrowserSyncPlugin({
       files: "**/*.php",
       injectChanges: true,
-      proxy: "https://bricoleurtech.local/",
-    }),
-  ],
+      proxy: "https://rss.local/"
+    })
+  ]
 };
