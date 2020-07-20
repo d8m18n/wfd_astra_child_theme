@@ -5,69 +5,70 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
+
 module.exports = {
-    entry: {
-        frontend: ["./src/js/app.js", "./src/css/style.css"]
-    },
-    output: {
-        filename: "js/[name].js",
-        path: path.resolve(__dirname, "./dist"),
-        publicPath: "../"
-    },
-    mode: "development",
-    devtool: "source-map",
-    optimization: {
-        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
-    },
-    module: {
-        rules: [
-            {
-                test: /\.$js/,
-                enforce: "pre",
-                exclude: /node_modules/,
-                use: [
-                    {
-                        loader: "babel-loader",
-                        options: {
-                            presets: ["@babel/env"],
-                            plugins: ["transform-class-properties"]
-                        }
-                    },
-                    {
-                        loader: "eslint-loader",
-                        options: {
-                            fix: true
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.css/,
-                use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"]
-            },
-            {
-                test: /\.(png|jpg)$/,
-                use: [
-                    {
-                        loader: "file-loader",
-                        options: {
-                            name: "[name].[ext]",
-                            outputPath: "images"
-                        }
-                    }
-                ]
+  entry: {
+    frontend: ["./src/js/index.js", "./src/scss/style.scss"]
+  },
+  output: {
+    filename: "js/[name].js",
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "../"
+  },
+  mode: "development",
+  devtool: "source-map",
+  optimization: {
+    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
+  },
+  module: {
+    rules: [
+      {
+        test: /\.$js/,
+        enforce: "pre",
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/env"],
+              plugins: ["transform-class-properties"]
             }
+          },
+          {
+            loader: "eslint-loader",
+            options: {
+              fix: true
+            }
+          }
         ]
-    },
-    plugins: [
-        new MiniCssExtractPlugin({
-            filename: "css/[name].css"
-        }),
-        new CleanWebpackPlugin(),
-        new BrowserSyncPlugin({
-            files: "**/*.php",
-            injectChanges: true,
-            proxy: "https://rss.local/"
-        })
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images"
+            }
+          }
+        ]
+      }
     ]
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "css/[name].css"
+    }),
+    new CleanWebpackPlugin(),
+    new BrowserSyncPlugin({
+      files: "**/*.php",
+      injectChanges: true,
+      proxy: "https://rss.local/"
+    })
+  ]
 };

@@ -11,17 +11,6 @@
     "dev": "gulp clean && webpack --watch --config webpack.dev.config.js",
     "lint": "eslint src"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.js": "eslint",
-    "**/*.{js,json,css,scss}": [
-      "prettier --write"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/d8m18n/wfd_astra_child_theme.git"
@@ -55,12 +44,15 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss": "^7.0.25",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.5",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
     "terser-webpack-plugin": "^2.3.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"

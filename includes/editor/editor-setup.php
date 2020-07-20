@@ -1,11 +1,11 @@
 <?php
 /**
- * wfd-child editor colors.
+ * Wfd-child editor colors.
  * In this file we create color pallettes for both the color picker in the customizer, and the color
  * pallettes offered in blocks.
  *
  * @package WordPress
- * @subpackage wfd-child
+ * @subpackage Wfd-child
  * @since wfd-child 1.0.0
  */
 
@@ -18,13 +18,13 @@ function wfd_astra_color_palettes() {
 
 	$color_palettes = array(
 		'#ffffff', // neutral-00 ( White )
-		'#020202', // neutral-100
-		'#9F1401', // primary-90
-		'#C72C05', // primary-70
-		'#D73E0F', // primary-60
-		'#063746', // secondary-80
-		'#136671', // secondary-70
-		'#259296', // secondary-60
+		'#111111', // neutral
+		'#2f3366', // primary
+		'#25284f', // primary-darker
+		'#4b4f8c', // primary-lighter
+		'#599dd6', // secondary
+		'#3e70e8', // secondary-darker
+		'#7abae8', // secondary-lighter
 	);
 
 	return $color_palettes;
@@ -156,37 +156,37 @@ function wfd_editor_setup() {
 				'color' => '#fafafa',
 			),
 			array(
-				'name'  => __( 'white', 'wfd' ),
+				'name'  => __( 'white', 'wfd' ), // White
 				'slug'  => 'white',
 				'color' => '#FFFFFF',
 			),
 			array(
-				'name'  => __( 'ui-red', 'wfd' ),
+				'name'  => __( 'ui-red', 'wfd' ), // White
 				'slug'  => 'ui-red',
 				'color' => '#DF2A4A',
 			),
 			array(
-				'name'  => __( 'ui-red-darker', 'wfd' ),
+				'name'  => __( 'ui-red-darker', 'wfd' ), // White
 				'slug'  => 'ui-red-darker',
 				'color' => '#AB2039',
 			),
 			array(
-				'name'  => __( 'ui-red-lighter', 'wfd' ),
+				'name'  => __( 'ui-red-lighter', 'wfd' ), // White
 				'slug'  => 'ui-red-lighter',
 				'color' => '#F83C5D',
 			),
 			array(
-				'name'  => __( 'ui-green', 'wfd' ),
+				'name'  => __( 'ui-green', 'wfd' ), // White
 				'slug'  => 'ui-green',
 				'color' => '#32A27A',
 			),
 			array(
-				'name'  => __( 'ui-green-darker', 'wfd' ),
+				'name'  => __( 'ui-green-darker', 'wfd' ), // White
 				'slug'  => 'ui-green-darker',
 				'color' => '#278060',
 			),
 			array(
-				'name'  => __( 'ui-green-lighter', 'wfd' ),
+				'name'  => __( 'ui-green-lighter', 'wfd' ), // White
 				'slug'  => 'ui-green-lighter',
 				'color' => '#4DC69A',
 			),

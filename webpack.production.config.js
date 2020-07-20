@@ -6,7 +6,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
     entry: {
-        frontend: ["./src/js/app.js", "./src/css/style.css"]
+        frontend: ["./src/js/index.js", "./src/scss/style.scss"]
     },
     output: {
         filename: "js/[name].js",
@@ -40,7 +40,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.css/,
+                test: /\.(sa|sc|c)ss$/,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"]
             },
             {
