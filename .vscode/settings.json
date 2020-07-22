@@ -4,4 +4,5 @@
     "phpcs.standard": "WordPress",
     "phpcbf.executablePath": "./vendor/bin/phpcbf",
     "phpcbf.onsave": true,
+    "editor.formatOnSave": true,
 }
