@@ -4,27 +4,26 @@
  * In this file we create color pallettes for both the color picker in the customizer, and the color
  * pallettes offered in blocks.
  *
- * @package WordPress
+ * @package    WordPress
  * @subpackage Wfd-child
- * @since wfd-child 1.0.0
+ * @since      wfd-child 1.0.0
  */
 
 /**
- * Function to modify astra theme color picker default colors. Edit this file to include your most used colors.
+ * Modify astra theme color picker default colors. Edit this file to include your most used colors.
  *
- * @return void
+ * @return colors
  */
 function wfd_astra_color_palettes() {
-
 	$color_palettes = array(
-		'#ffffff', // neutral-00 ( White )
-		'#111111', // neutral
-		'#276777', // primary
-		'#215664', // primary-darker
-		'#388a95', // primary-lighter
-		'#d84f58', // secondary
-		'#72252e', // secondary-darker
-		'#bc2a33', // secondary-lighter
+		'#ffffff', // neutral-00 ( White ).
+		'#111111', // neutral.
+		'#276777', // primary.
+		'#215664', // primary-darker.
+		'#388a95', // primary-lighter.
+		'#d84f58', // secondary.
+		'#72252e', // secondary-darker.
+		'#bc2a33', // secondary-lighter.
 	);
 
 	return $color_palettes;
@@ -116,7 +115,7 @@ function wfd_editor_setup() {
 				'color' => '#EFF8FF',
 			),
 			array(
-				'name'  => __( 'neutral', 'wfd' ), // Black
+				'name'  => __( 'neutral', 'wfd' ), // Black.
 				'slug'  => 'neutral',
 				'color' => '#111',
 			),
@@ -156,37 +155,37 @@ function wfd_editor_setup() {
 				'color' => '#fafafa',
 			),
 			array(
-				'name'  => __( 'white', 'wfd' ), // White
+				'name'  => __( 'white', 'wfd' ), // White.
 				'slug'  => 'white',
 				'color' => '#FFFFFF',
 			),
 			array(
-				'name'  => __( 'ui-red', 'wfd' ), // White
+				'name'  => __( 'ui-red', 'wfd' ),
 				'slug'  => 'ui-red',
 				'color' => '#DF2A4A',
 			),
 			array(
-				'name'  => __( 'ui-red-darker', 'wfd' ), // White
+				'name'  => __( 'ui-red-darker', 'wfd' ),
 				'slug'  => 'ui-red-darker',
 				'color' => '#AB2039',
 			),
 			array(
-				'name'  => __( 'ui-red-lighter', 'wfd' ), // White
+				'name'  => __( 'ui-red-lighter', 'wfd' ),
 				'slug'  => 'ui-red-lighter',
 				'color' => '#F83C5D',
 			),
 			array(
-				'name'  => __( 'ui-green', 'wfd' ), // White
+				'name'  => __( 'ui-green', 'wfd' ),
 				'slug'  => 'ui-green',
 				'color' => '#32A27A',
 			),
 			array(
-				'name'  => __( 'ui-green-darker', 'wfd' ), // White
+				'name'  => __( 'ui-green-darker', 'wfd' ),
 				'slug'  => 'ui-green-darker',
 				'color' => '#278060',
 			),
 			array(
-				'name'  => __( 'ui-green-lighter', 'wfd' ), // White
+				'name'  => __( 'ui-green-lighter', 'wfd' ),
 				'slug'  => 'ui-green-lighter',
 				'color' => '#4DC69A',
 			),
