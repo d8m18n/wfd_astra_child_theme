@@ -2,6 +2,6 @@
  * Webfoundations custom styles
  */
 
-@import "../scss/base/variables.scss";
-
-@import "../scss/modules/test.scss";
+@import "./base/variables";
+@import "./base/editor-colors";
+@import "./modules/test";
