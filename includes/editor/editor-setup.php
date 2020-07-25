@@ -47,72 +47,72 @@ function wfd_editor_setup() {
 			array(
 				'name'  => __( 'primary', 'wfd' ),
 				'slug'  => 'primary',
-				'color' => '#2f3366',
+				'color' => '#276777',
 			),
 			array(
 				'name'  => __( 'primary-darker', 'wfd' ),
 				'slug'  => 'primary-darker',
-				'color' => '#25284f',
+				'color' => '#215664',
 			),
 			array(
 				'name'  => __( 'primary-lighter', 'wfd' ),
 				'slug'  => 'primary-lighter',
-				'color' => '#4B4F8C',
+				'color' => '#388a9f',
 			),
 			array(
 				'name'  => __( 'primary-50', 'wfd' ),
 				'slug'  => 'primary-50',
-				'color' => '#888CC8',
+				'color' => '#57b0c6',
 			),
 			array(
 				'name'  => __( 'primary-25', 'wfd' ),
 				'slug'  => 'primary-25',
-				'color' => '#C2C4E8',
+				'color' => '#9cd1de',
 			),
 			array(
 				'name'  => __( 'primary-10', 'wfd' ),
 				'slug'  => 'primary-10',
-				'color' => '#EEEEFD',
+				'color' => '#d9edf2',
 			),
 			array(
 				'name'  => __( 'primary-05', 'wfd' ),
 				'slug'  => 'primary-05',
-				'color' => '#F4F4F7',
+				'color' => '#eef7f9',
 			),
 			array(
 				'name'  => __( 'secondary', 'wfd' ),
 				'slug'  => 'secondary',
-				'color' => '#599DD6',
+				'color' => '#d84f58',
 			),
 			array(
 				'name'  => __( 'secondary-darker', 'wfd' ),
 				'slug'  => 'secondary-darker',
-				'color' => '#3E70B8',
+				'color' => '#a7252e',
 			),
 			array(
 				'name'  => __( 'secondary-lighter', 'wfd' ),
 				'slug'  => 'secondary-lighter',
-				'color' => '#7ABAE8',
+				'color' => '#bc2a33',
 			),
 			array(
 				'name'  => __( 'secondary-50', 'wfd' ),
 				'slug'  => 'secondary-50',
-				'color' => '#A7D5F4',
+				'color' => '#e07178',
 			),
 			array(
 				'name'  => __( 'secondary-25', 'wfd' ),
 				'slug'  => 'secondary-25',
-				'color' => '#C0E2FA',
+				'color' => '#e8979c',
 			),
 			array(
 				'name'  => __( 'secondary-10', 'wfd' ),
 				'slug'  => 'secondary-10',
-				'color' => '#DBEFFF',
+				'color' => '#f6d5d7',
 			),
 			array(
 				'name'  => __( 'secondary-05', 'wfd' ),
 				'slug'  => 'secondary-05',
-				'color' => '#EFF8FF',
+				'color' => '#fbeaeb',
 			),
 			array(
 				'name'  => __( 'neutral', 'wfd' ), // Black.
@@ -155,8 +155,8 @@ function wfd_editor_setup() {
 				'color' => '#fafafa',
 			),
 			array(
-				'name'  => __( 'white', 'wfd' ), // White.
-				'slug'  => 'white',
+				'name'  => __( 'neutral-00', 'wfd' ), // White.
+				'slug'  => 'neutral-00',
 				'color' => '#FFFFFF',
 			),
 			array(

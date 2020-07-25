@@ -1,1 +1,70 @@
-$body-color: red;
+/** 
+ * Theme Colors - as per the styleguide in Figma.
+ */
+
+$colors: (
+    primary: #276777,
+    primary-darker: #215664,
+    primary-lighter: #388a9f,
+    primary-50: #57b0c6,
+    primary-25: #9cd1de,
+    primary-10: #d9edf2,
+    primary-05: #eef7f9,
+    secondary: #d84f58,
+    secondary-darker: #a7252e,
+    secondary-lighter: #bc2a33,
+    secondary-50: #e07178,
+    secondary-25: #e8979c,
+    secondary-10: #f6d5d7,
+    secondary-05: #fbeaeb,
+    neutral: #111,
+    neutral-80: #333,
+    neutral-60: #666,
+    neutral-40: #999,
+    neutral-20: #ddd,
+    neutral-15: #eee,
+    neutral-10: #f4f4f4,
+    neutral-05: #fafafa,
+    neutral-00: #fff,
+    ui-red: #df2a4a,
+    ui-red-darker: #ab2039,
+    ui-red-lighter: #f83c5d,
+    ui-green: #32a27a,
+    ui-green-darker: #278060,
+    ui-green-lighter: #4dc69a
+);
+
+$social-colors: (
+    facebook: #1877f2,
+    instagram: #c32aa3,
+    twitter: #1da1f2,
+    linkedin: #007bb5
+);
+
+/**
+ * CSS Variables - these are mapped from the sass list above - edit the list if required.
+ */
+
+:root {
+    // site colors
+    @each $name, $color in $colors {
+        --#{$name}: #{$color};
+    }
+
+    --black: var(--neutral);
+    --white: var(--neutral-00);
+
+    // social colors
+    @each $name, $color in $social-colors {
+        --#{$name}: #{$color};
+    }
+
+    /* Breakpoints 
+	* For breakpoints we're using a mobile first approach with the Astra themes
+	* breakpoints at 544px for mobile and 768 for tablet.
+	* 
+	*/
+
+    --mobile: 544px;
+    --tablet: 768px;
+}
