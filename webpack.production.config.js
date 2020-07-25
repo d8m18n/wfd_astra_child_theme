@@ -6,7 +6,8 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
     entry: {
-        frontend: ["./src/js/index.js", "./src/scss/style.scss"]
+        frontend: "./src/js/index.js",
+        editor: "./src/js/editor.js"
     },
     output: {
         filename: "js/[name].js",
