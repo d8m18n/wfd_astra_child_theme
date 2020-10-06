@@ -18,12 +18,12 @@ function wfd_astra_color_palettes() {
 	$color_palettes = array(
 		'#ffffff', // neutral-00 ( White ).
 		'#111111', // neutral.
-		'#276777', // primary.
-		'#215664', // primary-darker.
-		'#388a95', // primary-lighter.
+		'#4a9892', // primary.
+		'#2e807a', // primary-darker.
+		'#fbf4ae', // primary-lighter.
 		'#d84f58', // secondary.
-		'#72252e', // secondary-darker.
-		'#bc2a33', // secondary-lighter.
+		'#c82c37', // secondary-darker.
+		'#e17980', // secondary-lighter.
 	);
 
 	return $color_palettes;
